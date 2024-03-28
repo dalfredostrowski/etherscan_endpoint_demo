@@ -1,38 +1,34 @@
-    1  ls
-    2  sudo apt-get update
-    3  sudo apt-get install -y ca-certificates curl gnupg
-    4  sudo mkdir -p /etc/apt/keyrings
-    5  curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
-    6  NODE_MAJOR=20
-    7  echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
-    8  sudo apt-get update
-    9  sudo apt-get install nodejs -y
-   10  sudo snap install docker
-   11  npm install express --save
-   12  sudo npm install -g heroku --force
-   13  npm install express axios
-   14  mkdir alfreo
-   15  rmdir alfredo
-   16  rmdir alfreo
-   17  mkdir alfredo
-   18  cd alfredo/
-   19  vi app.js
-   20  vi appTwo.js
-   21  node -v
-   22  node appTwo.js
-   23  vi package.json
-   24  vi Dockerfile
-   25  vi heroku.yml
-   26  vi .dockerignore
-   27  sudo docker run -p 8080:8080 -tid alfredotwo
-   28  heroku login -i
-   29  heroku create alfredo --manifest
-   30  git init
-   31  git add -A
-   32  git commit -m "firstfirst"
-   33  git branch -M main
-   34  heroku git:remote -a alfredo
-   35  git push heroku HEAD:master
+    
+    sudo apt-get update
+    sudo apt-get install -y ca-certificates curl gnupg
+    sudo mkdir -p /etc/apt/keyrings
+    curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+    NODE_MAJOR=20
+    echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+    sudo apt-get update
+    sudo apt-get install nodejs -y
+    sudo snap install docker
+    npm install express --save
+    sudo npm install -g heroku --force
+    npm install express axios
+    mkdir alfredo
+    cd alfredo/
+    vi appTwo.js
+    node -v
+    node appTwo.js
+    vi package.json
+    vi Dockerfile
+    vi heroku.yml
+    vi .dockerignore
+    sudo docker run -p 8080:8080 -tid alfredotwo
+    heroku login -i
+    heroku create alfredo --manifest
+    git init
+    git add -A
+    git commit -m "firstfirst"
+    git branch -M main
+    heroku git:remote -a alfredo
+    git push heroku HEAD:master
 
 
 
