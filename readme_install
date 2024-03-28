@@ -1,0 +1,65 @@
+    1  ls
+    2  sudo apt-get update
+    3  sudo apt-get install -y ca-certificates curl gnupg
+    4  sudo mkdir -p /etc/apt/keyrings
+    5  curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+    6  NODE_MAJOR=20
+    7  echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+    8  sudo apt-get update
+    9  sudo apt-get install nodejs -y
+   10  sudo snap install docker
+   11  npm install express --save
+   12  sudo npm install -g heroku --force
+   13  npm install express axios
+   14  mkdir alfreo
+   15  rmdir alfredo
+   16  rmdir alfreo
+   17  mkdir alfredo
+   18  cd alfredo/
+   19  vi app.js
+   20  vi appTwo.js
+   21  node -v
+   22  node appTwo.js
+   23  vi package.json
+   24  vi Dockerfile
+   25  vi heroku.yml
+   26  vi .dockerignore
+   27  sudo docker run -p 8080:8080 -tid alfredotwo
+   28  heroku login -i
+   29  heroku create alfredo --manifest
+   30  git init
+   31  git add -A
+   32  git commit -m "firstfirst"
+   33  git branch -M main
+   34  heroku git:remote -a alfredo
+   35  git push heroku HEAD:master
+
+
+
+
+
+ETH wallet
+0x758b8178A9A4B7206D1f648c4a77C515CbaC7000
+
+
+USDT wallet
+0x9f8a08B903Cd76644733e26F3E6BBA90983dcc65
+
+token
+JXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# replace wtih your aws dns or heroku dns respectively
+http://localhost:8080/eth_balance?address=0x758b8178A9A4B7206D1f648c4a77C515CbaC7000
+ec2-34-217-208-104.us-west-2.compute.amazonaws.com
+
+http://localhost:8080/usdt_balance?address=0x9f8a08B903Cd76644733e26F3E6BBA90983dcc65
+ec2-34-217-208-104.us-west-2.compute.amazonaws.com
+
+
+ref:
+https://forum.freecodecamp.org/t/building-a-node-js-application-using-docker/463269
+https://stackoverflow.com/questions/26595874/heroku-src-refspec-master-does-not-match-any
+https://help.heroku.com/LGKL6LTN/how-do-i-delete-destroy-a-heroku-application
+https://stackoverflow.com/questions/45001168/npm-err-missing-script-start-error-with-docker
+https://www.docker.com/blog/getting-started-with-docker-using-node-jspart-i/
+https://stackoverflow.com/questions/15693192/heroku-node-js-error-web-process-failed-to-bind-to-port-within-60-seconds-of
