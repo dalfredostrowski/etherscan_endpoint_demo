@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 
-const API_KEY = '6SS28128JR4JWVJ37NYBU17EJT1BF61XJP';
+const API_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 
 app.get('/', async (req, res) => {
     // const { address } = req.query;
