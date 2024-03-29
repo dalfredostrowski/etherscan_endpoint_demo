@@ -25,7 +25,7 @@
     vi .dockerignore
  sudo docker build -t alfredo .
 
-    sudo docker run -p 8080:8080 -tid alfredotwo
+    sudo docker run -p 8080:8080 -tid alfredo
     heroku login -i
     heroku create alfredo --manifest
     git init
