@@ -1,4 +1,7 @@
-    
+# start ec2 instance c.5 ( preferably, though you might get by with less ) 
+# see the ppt.
+
+
     sudo apt-get update
     sudo apt-get install -y ca-certificates curl gnupg
     sudo mkdir -p /etc/apt/keyrings
